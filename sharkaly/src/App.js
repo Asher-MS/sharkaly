@@ -17,7 +17,7 @@ function App() {
   let [answer,setAnswer]=useState("");
   const BOT_URL="http://192.168.1.13:8080/search"
   function handleClick(){
-    let body={"data":[question],"top_k":3}
+    let body={"data":[question],"top_k":1}
     
     axios.post(BOT_URL,body).then((resp)=>{handleAnswer(resp.data["data"]["docs"][0]["matches"][0]["text"])})
   }

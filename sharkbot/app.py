@@ -59,9 +59,10 @@ def hello_world(args):
 
     # index it!
     with f, open("sharkdata.csv") as fp:
+        # print(fp.read())
         f.index(from_csv(fp, field_resolver={'question': 'text'}), show_progress=True)
-
-        # switch to REST gateway at runtime
+        
+        # switcfph to REST gateway at runtime
         f.protocol = 'http'
         f.port_expose = args.port_expose
 
@@ -82,6 +83,7 @@ def hello_world(args):
 
         if not args.unblock_query_flow:
             f.block()
+        fp.close()
 
 
 def download_data(targets, download_proxy=None, task_name='download fashion-mnist'):
