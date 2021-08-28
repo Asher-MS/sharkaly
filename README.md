@@ -2,7 +2,7 @@
 
 <img src="sharkaly/public/heading.png"></img>
 
-### "sharkaly" is a Q/A platform about sharks it tries to answer your queries related to sharks.
+### "sharkaly" is a Q/A platform about sharks , it tries to answer your queries related to sharks.
 
 ## Setup
 
